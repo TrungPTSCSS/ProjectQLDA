@@ -23,12 +23,8 @@ Loại món ăn (fastfood, chinese food, món chay…).
 6. Thông tin chi tết của món ăn. 
 	Thông tin chi tiết món ăn như nguyên liệu, thành phần, giá cả ước tính cho món ăn, tổng số calo, giá trị dinh dưỡng, những lưu ý của món ăn…
 	Công thức nấu từng bước.
-	Nhận xét.
 7. kế hoạch món ăn.
 	Có thể lập kế hoạch ăn uống theo từng đối tượng(người ăn kiêng, tập gym, người mắc bệnh…)
 
 
 Hướng dẫn sử dụng:
-
-add friend mấy ông ơi
-https://www.facebook.com/profile.php?id=100008650444944
