@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login_form);
         db = new Database(this);
+//        db.GetData("INSERT INTO listFood VALUES (null, 'Hamburger', 'Bánh mì, trứng, thịt bò, mozarella, cà chua, rau cải, ...', 'Nướng thịt bỏ, chiên trứng. Bánh mì cắt ra cho rau lên, sau đó thêm vài miếng cà chua, bỏ thịt vò và trứng lên. Sau cùng bỏ miếng phomai mozarella lên trên cùng. bỏ miếng bánh mì kia lên lại. Sau đó ghim cây vào để giữ cố định bánh mì. Sau đó đem ra thưởng thức','23/05/2021' ,null)");
+//        db.QueryData("INSERT INTO Food VALUES (null, 'Hamburger', 'Bánh mì, trứng, thịt bò, mozarella, cà chua, rau cải, ...', 'Nướng thịt bỏ, chiên trứng. Bánh mì cắt ra cho rau lên, sau đó thêm vài miếng cà chua, bỏ thịt vò và trứng lên. Sau cùng bỏ miếng phomai mozarella lên trên cùng. bỏ miếng bánh mì kia lên lại. Sau đó ghim cây vào để giữ cố định bánh mì. Sau đó đem ra thưởng thức','23/05/2021' ,null)");
+//        db.QueryData("INSERT INTO Food VALUES (null, 'Cháo', 'Bánh mì, trứng, thịt bò, mozarella, cà chua, rau cải, ...', 'Nướng thịt bỏ, chiên trứng. Bánh mì cắt ra cho rau lên, sau đó thêm vài miếng cà chua, bỏ thịt vò và trứng lên. Sau cùng bỏ miếng phomai mozarella lên trên cùng. bỏ miếng bánh mì kia lên lại. Sau đó ghim cây vào để giữ cố định bánh mì. Sau đó đem ra thưởng thức','23/05/2021' ,null)");
+//        db.QueryData("INSERT INTO Food VALUES (null, 'Phở Hà Nội', 'Bánh mì, trứng, thịt bò, mozarella, cà chua, rau cải, ...', 'Nướng thịt bỏ, chiên trứng. Bánh mì cắt ra cho rau lên, sau đó thêm vài miếng cà chua, bỏ thịt vò và trứng lên. Sau cùng bỏ miếng phomai mozarella lên trên cùng. bỏ miếng bánh mì kia lên lại. Sau đó ghim cây vào để giữ cố định bánh mì. Sau đó đem ra thưởng thức','23/05/2021' ,null)");
+
         Button btn_login = findViewById(R.id.btnLogin);
         EditText mail = (EditText) findViewById(R.id.txtEmai_login);
         EditText pass = (EditText) findViewById(R.id.txtpassword_login);

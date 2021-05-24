@@ -22,6 +22,7 @@ public class RegisterAccount extends AppCompatActivity {
         EditText editMail = (EditText) findViewById(R.id.txtEmail_register);
         EditText editPassword = (EditText) findViewById(R.id.txtpassword_register);
         EditText editConfirmPassword = (EditText) findViewById(R.id.txtrepeatepass_register);
+
         db = new Database(this);
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override

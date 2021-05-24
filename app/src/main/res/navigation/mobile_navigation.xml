@@ -12,9 +12,9 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_yourFood"
         android:name="com.example.appnote.ui.gallery.GalleryFragment"
-        android:label="Category"
+        android:label="Your Food"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
