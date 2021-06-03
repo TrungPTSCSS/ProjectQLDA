@@ -1,9 +1,11 @@
 package com.example.doan;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -46,14 +48,23 @@ public class HomeActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         database=FirebaseDatabase.getInstance();
         categoryfood=database.getReference("Categoryfood");
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        Button favorite = (Button) findViewById(R.id.Favorite);
+        favorite.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            public void onClick(View v) {
+                Snackbar.make(v, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+                startActivity(new Intent(HomeActivity.this, Favorite.class));
             }
         });
+//        @SuppressLint("WrongViewCast") FloatingActionButton fab = findViewById(R.id.Favorite);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
@@ -68,7 +79,7 @@ public class HomeActivity extends AppCompatActivity {
         //Set tên cho User
         View headerView=navigationView.getHeaderView(0);
         txtFullName=(TextView)headerView.findViewById(R.id.txtFullName);
-        txtFullName.setText(Common.currentUser.getName());
+//        txtFullName.setText(Common.currentUser.getName());
         //tải menu
         recycler_menu=(RecyclerView)findViewById(R.id.recycler_menu);
         recycler_menu.setHasFixedSize(true);

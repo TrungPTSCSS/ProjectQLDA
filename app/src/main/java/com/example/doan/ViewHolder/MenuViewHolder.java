@@ -1,15 +1,18 @@
 package com.example.doan.ViewHolder;
 
+import android.view.ContextMenu;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.doan.Common.Common;
 import com.example.doan.Interface.ItemClickListener;
 import com.example.doan.R;
 
-public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+public class MenuViewHolder extends RecyclerView.ViewHolder implements
+        View.OnClickListener {
     public TextView txtMenuName;
     public ImageView imageView;
     private ItemClickListener itemClickListener;

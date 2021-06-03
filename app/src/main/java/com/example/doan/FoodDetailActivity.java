@@ -32,11 +32,17 @@ public class FoodDetailActivity extends AppCompatActivity {
         food_image=(ImageView) findViewById(R.id.img_food);
         //get Food
         if(getIntent()!=null)
-            foodId= getIntent().getStringExtra("FoodId");
+            foodId= getIntent().getStringExtra("foodId");
         if(!foodId.isEmpty())
         {
             getDetaiFood(foodId);
         }
+
+
+
+
+
+
     }
 
     private void getDetaiFood(String foodId) {

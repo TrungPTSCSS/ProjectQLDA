@@ -1,8 +1,9 @@
 package com.example.doan.model;
 
 public class Food {
-    private String Name,Image, NguyenLieu,CachLam,MenuId ;
+    private String Name,Image, NguyenLieu,CachLam,MenuId,Id ;
     public Food(){
+
     }
 
     public Food(String name, String image, String nguyenLieu, String cachLam, String menuId) {
@@ -11,6 +12,22 @@ public class Food {
         NguyenLieu = nguyenLieu;
         CachLam = cachLam;
         MenuId = menuId;
+    }
+    public Food(String id, String name, String image, String nguyenLieu, String cachLam, String menuId) {
+        Id=id;
+        Name = name;
+        Image = image;
+        NguyenLieu = nguyenLieu;
+        CachLam = cachLam;
+        MenuId = menuId;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String id) {
+        Id = id;
     }
 
     public String getName() {

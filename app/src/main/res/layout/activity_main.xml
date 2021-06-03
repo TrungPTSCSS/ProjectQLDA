@@ -26,31 +26,48 @@
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="121dp"
+        android:layout_width="180dp"
         android:layout_height="70dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="56dp"
-        android:layout_marginLeft="56dp"
-        android:layout_marginEnd="240dp"
-        android:layout_marginRight="240dp"
-        android:layout_marginBottom="202dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginLeft="105dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="122dp"
         android:text="Đăng Ký"
         app:backgroundTint="#1D0F20" />
 
     <Button
         android:id="@+id/btnSignIn"
-        android:layout_width="121dp"
+        android:layout_width="200dp"
         android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="41dp"
-        android:layout_marginRight="41dp"
-        android:layout_marginBottom="202dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginLeft="102dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="109dp"
+        android:layout_marginBottom="230dp"
         android:text="Đăng Nhập"
+        app:backgroundTint="#1C121E" />
+
+    <Button
+        android:id="@+id/btnAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:layout_marginBottom="24dp"
+        android:text="Admin"
         app:backgroundTint="#1C121E" />
 </RelativeLayout>

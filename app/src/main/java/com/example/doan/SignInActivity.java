@@ -22,7 +22,7 @@ public class SignInActivity extends AppCompatActivity {
 
     EditText edtPhone, edtPassword;
     Button btnSignIn;
-
+    public static String IDUser;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +33,8 @@ public class SignInActivity extends AppCompatActivity {
         FirebaseDatabase database=FirebaseDatabase.getInstance();
         DatabaseReference table_user=database.getReference("User");
         btnSignIn.setOnClickListener(new View.OnClickListener() {
+
+
             @Override
             public void onClick(View v) {
                 ProgressDialog mDialog =new ProgressDialog(SignInActivity.this);
@@ -47,6 +49,7 @@ public class SignInActivity extends AppCompatActivity {
                             User user = dataSnapshot.child(edtPhone.getText().toString()).getValue(User.class);
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
                                 Common.currentUser=user;
+                                IDUser=dataSnapshot.child(edtPhone.getText().toString()).getKey();
                                 Intent homeIntent=new Intent(SignInActivity.this,HomeActivity.class);
                                 startActivity(homeIntent);
                                 finish();
